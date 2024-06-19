@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+/* body{
+    background-image: url('Images/clg02.jpg');
+    background-repeat: no-repeat;
+} */
+
+.clg-name {
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.collage-name{
+    padding: 6px;
+    transition: all 1s;
+    }
+    
+    .my-nav{
+        font-size:smaller;
+        
+    }
+    
+     .dropdown{
+      margin-top: 15px;
+    } 
+    
+    .dropdown:hover .dropdown-content {
+        display:block;
+        border: 1px solid rgb(33, 91, 110);
+        background-color:rgb(32, 69, 141);
+        padding: 8px;     
+    }
+
+
+
+
+
+/* Cards Css Starts From Here */
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 720px;
+  border-radius: 24px;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translate(0px, -16px); /* Move up by default */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 36px;
+  border-radius: 22px;
+  color: #ffffff;
+  overflow: hidden;
+  background: #2f55ae;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%);
+  background: #ced8ff;
+  z-index: -1;
+  transform-origin: bottom;
+  border-radius: inherit;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  rotate: -8deg; /* Rotate by default */
+}
+
+.content::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%);
+  background: #e7ecff;
+  z-index: -2;
+  transform-origin: bottom;
+  border-radius: inherit;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  rotate: 8deg; /* Rotate by default */
+}
+
+.content .para {
+  z-index: 1;
+  opacity: 1;
+  font-size: 18px;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .link {
+  z-index: 1;
+  color: #fea000;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .link:hover {
+  text-decoration: underline;
+}
+
+.card:hover {
+  transform: translate(0px, 0px); /* No translation on hover */
+}
+
+.card:hover .content::before {
+  rotate: 0deg;
+  top: -4%;
+  width: 90%;
+  height: 90%;
+}
+
+.card:hover .content::after {
+  rotate: 0deg;
+  top: -8%;
+  width: 80%;
+  height: 80%;
+}
+
+
+    
+       
+
+
+
+
+
+
+       .card29 {
+        position: relative;
+        width:380px;
+        height: 250px;
+        background:#2c74e8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      
+      .card29::before,
+      .card29::after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(29, 160, 225);
+        transition: all 0.5s;
+      }
+      
+      .card29::before {
+        top: 0;
+        right: 0;
+        border-radius: 0 15px 0 100%;
+      }
+      
+      .card29::after {
+        bottom: 0;
+        left: 0;
+        border-radius: 0 100%  0 15px;
+      }
+      
+      .card29:hover::before,
+      .card29:hover:after {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        transition: all 0.5s;
+      }
+      
+      .card29:hover:after {
+        content: "Inspire to Innovate for Positive Impact";
+        color:#ffffff;
+      }
+      .card29:hover{
+         box-shadow:2px 2px 30px darkblue;
+      }
+
+
+      #dropdownNavbarLink:hover #dropdownNavbar{
+        display:block;
+      }
+
+      li a{ 
+         margin :17px;
+      }
+
+
